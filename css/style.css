@@ -1,5 +1,4 @@
 /* ===== RESET ===== */
-
 *{
     margin: 0;
     padding: 0;
@@ -18,6 +17,9 @@ img{
 
 /* ========= VARIABLES====== */
 :root{
+--header-height: 4.5rem; 
+
+/* colors */
 --hue: 240;
 
 /* HSL color mode */
@@ -36,10 +38,10 @@ body{
     font: 400 1rem "DM sans", sans-serif;
     color: var(--text-color);
     background: var(--body-color);
-    -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased; /* Melhorando a fonte, fica mais leve */
 }
 
-h1{
+.title{
     font: 700 1.75rem "Poppins", sans-serif;
     color: var(--title-color);
     -webkit-font-smoothing: auto;
@@ -67,39 +69,16 @@ h1{
 .divider-1{
     height: 1px;
     background: linear-gradient(
-        270deg, 
+       270deg, 
        hsla(var(--hue), 36%, 57%, 1) 0%,
        hsla(var(--hue), 65%, 88%, 0.34) 100%
-        );
+       );
 }
 
 
 /* ========= LAYOUT ====== */
-#header{
-    border-bottom: 1px solid #e4e4e4;
-    margin-bottom: 2rem;
-    display: flex;
-}
-
-nav{
-    height: 4.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo{
-    font: 700 1.31rem 'Poppins', sans-serif;
-    color: var(--title-color);
-
-}
-
-.logo span{
-    color: var(--base-color);
-}
-
 .container{
-    width: 100%;
+    
     margin-left: 1.5rem;
     margin-right: 1.5rem;
 }
@@ -111,6 +90,64 @@ nav{
 
 .section{
     padding: 5rem 0;
+}
+
+#header{
+    border-bottom: 1px solid #e4e4e4;
+    margin-bottom: 2rem;
+    display: flex;
+
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: var(--body-color);
+}
+main{
+    margin-top: calc(var(--header-height) + 2rem);
+}
+
+
+/* ==========LOGO========== */
+
+.logo{
+    font: 700 1.31rem 'Poppins', sans-serif;
+    color: var(--title-color);
+
+}
+
+.logo span{
+    color: var(--base-color);
+}
+
+
+/* ==========NAVIGATION========== */
+
+
+nav{
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+nav .menu{
+    opacity: 0;
+    visibility: hidden;
+}
+
+nav.show .menu{
+    opacity: 1;
+    visibility: visible;
+    background-color: var(--body-color);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left:0 ;
 }
 
 /* ========= HOME ====== */
@@ -125,6 +162,7 @@ nav{
 
 #home .image{
     position: relative;
+    
 }
 
 #home .image::before{
@@ -141,6 +179,7 @@ nav{
 #home .image img{
     position: relative;
     right: 2.93rem;
+    
 }
 
 #home .image img,
