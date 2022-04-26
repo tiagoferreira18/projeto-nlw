@@ -7,12 +7,19 @@
 
     <!-- Link icons -->
     <link rel="stylesheet" href="assets/fonts/style.css">
+    
+        <!-- Swiper -->
+        <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
 
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
     <title>MaryJeny</title>
 </head>
 <body>
@@ -37,6 +44,7 @@
 
 
     <main>
+        <!-- home -->
         <section class="section" id="home">
             <div class="container grid">
                 <div class="image">
@@ -54,7 +62,7 @@
 
         <div class="divider-1"></div>
 
-        
+        <!-- About -->
         <section class="section" id="about">
             <div class="container grid">
                 <div class="image">
@@ -68,7 +76,10 @@
                 </div>
             </div>
         </section>
+
         <div class="divider-2"></div>
+
+        <!-- Services -->
         <section class="section" id="services">
             <div class="container grid">
                 <header>
@@ -95,8 +106,84 @@
             </div>
         </section>
 
+        <div class="divider-1"></div>
+        <!-- Testimonials -->
+        <section class="section" id="testimonials">
+            <div class="container ">
+                <header class="title">
+                    <h2>Depoimentos</h2>
+                </header>
+                
+                <div class="testimonials swiper-container">
+                  
+                    <div class="swiper-wrapper">
+                        <div class="testimonial swiper-slide">
+                            <blockquote>
 
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo esse dolore, deleniti maiores rem, 
+                                </p>
+                                <cite>
+                                    <img src="assets/fotos/fernanda.jpg" alt="Foto de Fernanda Silva">
+                                    Fernanda Silva Santos
+                                </cite>
 
+                            </blockquote>
+                        </div>
+
+                        <div class="testimonial swiper-slide">
+                            <blockquote>
+
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo esse dolore, deleniti maiores rem, 
+                                </p>
+                                <cite>
+                                    <img src="assets/fotos/cristina.jpg" alt="Foto de Cristina Silva">
+                                    Cristina Ferreira da Silva
+                                </cite>
+
+                            </blockquote>
+                        </div>
+
+                        <div class="testimonial swiper-slide">
+                            <blockquote>
+
+                                <p>
+                                    <span>&ldquo;</span>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo esse dolore, deleniti maiores rem, 
+                                </p>
+                                <cite>
+                                    <img src="assets/fotos/edileusa.jpg" alt="Foto de Edileusa Silva">
+                                    Edileusa Celestina
+                                </cite>
+
+                            </blockquote>
+                        </div>
+                                             
+                    </div>
+                   <!-- If we need pagination -->
+                   <div class="swiper-pagination"></div>
+                </div>
+                
+            </div>
+            
+        </section>
+           
+       
+
+        <div class="divider-2"></div>
+        <!-- Contact -->
+        <section class="section" id="contact">
+            <div class="container grid">
+                <header class="title">
+                    <h2>Contatos</h2>
+                </header>
+            </div>
+        </section>
+
+        
     </main>
         
 
@@ -104,6 +191,11 @@
 
     </footer>
 
+    <!-- Swiper -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- main js -->
    <script src="js/main.js"></script>
+  
 </body>
 </html>
