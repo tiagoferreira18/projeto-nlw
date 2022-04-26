@@ -385,6 +385,11 @@ nav.show div.icon-close_icon{
     background: white;
 }
 
+#testimonials .container{
+    margin-left: 0;
+    margin-right: 0;
+}
+
 #testimonials header{
     margin-bottom: 0;
 }
