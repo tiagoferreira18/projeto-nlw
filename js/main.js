@@ -37,10 +37,10 @@ window.addEventListener('scroll',()=>{
 })
 
 /* testimonials carousel slider swiper */
-const swiper = new Swiper('.swiper-container', {
+const swiper = new Swiper('.swiper', {
     slidesPerView: 1,
     pagination: {
-        el: '.swiper-pagination',
+        el: '.swiper-pagination'
         
     },
     mousewheel: true,
