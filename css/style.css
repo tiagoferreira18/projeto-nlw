@@ -470,7 +470,6 @@ nav.show div.icon-close_icon{
 
 #contact ul.grid{
     gap: 2rem;
-
 }
 
 #contact ul li{
@@ -480,6 +479,4 @@ nav.show div.icon-close_icon{
 
 #contact ul li i{
     color: var(--base-color);
-   
 }
-
