@@ -17,24 +17,26 @@ for(let link of links){
 
 }
 
+/* Função para mudar o header da pagina */
+function changeHeaderWhenScroll(){
+
 /*  Mudar o header da página quando der scroll */
-
 const header = document.querySelector('#header');
-
 /* Objeto header com a propriedade offsetHeight */
 const navHeight = header.offsetHeight;
 
-/* Função de callback para scroll */
-window.addEventListener('scroll',()=>{
-    /* scroll yu eicho vertical */
-    if(window.scrollY >=navHeight){
-        //scroll maior que a altura do header
-        header.classList.add('scroll')
-    }else{
-        //menor que a altura do header
-        header.classList.remove('scroll')
-    }
-})
+if(window.scrollY >=navHeight){
+    //scroll maior que a altura do header
+    header.classList.add('scroll')
+}else{
+    //menor que a altura do header
+    header.classList.remove('scroll')
+}
+
+}
+
+
+
 
 /* testimonials carousel slider swiper */
 const swiper = new Swiper('.swiper', {
@@ -48,20 +50,29 @@ const swiper = new Swiper('.swiper', {
 });
 
 /* scrollReveal: Mostrar elementos quando der scroll na página */
-const scrollReveal = ScrollReveal({
-    origin: 'top',
-    distance: '30px',
-    duration: 700,
-    reset: true,
-})
 
-scrollReveal.reveal(
-    `#home .image, #home .text, 
-     #about .image, #about .text,
-     #services header, #services .card,
-     #testimonials header, #testimonials .testimonials,
-     #contact .text, #contact .links
 
-    `, { interval: 100})
+// const scrollReveal = ScrollReveal({
+//     origin: 'top',
+//     distance: '30px',
+//     duration: 700,
+//     reset: true,
+// })
 
+// scrollReveal.reveal(
+//     `#home .image, #home .text, 
+//      #about .image, #about .text,
+//      #services header, #services .card,
+//      #testimonials header, #testimonials .testimonials,
+//      #contact .text, #contact .links,
+//      footer .brand, footer .social
+
+//     `, { interval: 100})
+
+
+    /* when scrool */
+
+    window.addEventListener('scroll', ()=>{
+        changeHeaderWhenScroll()
+    })
 
