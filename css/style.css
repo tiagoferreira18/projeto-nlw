@@ -518,3 +518,18 @@ footer .social{
 footer .social a:hover{
     transform: translateY(-8px);
 }
+
+/* responsivo */
+
+/* MEDIA QUERIES */
+/* extra large devices: 1200 > */
+/* large devices: 1023 >  */
+/* large devices: 992 >  */
+@media (min-width: 992px){
+    
+} 
+
+/* medium devices: 767 >  */
+
+
+
