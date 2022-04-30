@@ -794,6 +794,21 @@ footer .social a:hover{
 }
 /* large devices: 1023 >  */
 
+@media (min-width: 767px){
+    
+   footer.section{
+       padding: 3.75rem 0;
+   }
+   footer .container{
+       grid-auto-flow: column;
+       align-items: center;
+       justify-content: space-between;
+   }
+   footer .logo{
+    font-size: 2rem;
+}
+}
+
 
 /* medium devices: 767 >  */
 
